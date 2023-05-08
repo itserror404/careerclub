@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+  <title>JobEntry - Job Portal Website Template</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+  <link href="img/about-3.jpg" rel="icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap"
+    rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/templatemo-eduwell-style.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="assets/css/lightbox.css">
+
+  <style>
+    body {
+      background-color: #f0f0f0;
+      font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+      padding-top: 100px;
+    }
+
+    .nav {
+      background-color: #fff;
+      overflow: hidden;
+      position: fixed;
+      top: 0;
+      right: 0;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 100%;
+      height: 60px;
+      /* Increase the height of the nav bar to accommodate the padding on nav links */
+      box-sizing: border-box;
+      z-index: 100;
+    }
+
+
+    .nav a.nav-left {
+      margin-right: auto;
+      font-size: 30px;
+    }
+
+    .nav a {
+      color: #37352f;
+      padding: 0 16px;
+      /* Adjust the padding of nav links to cover the full height of the nav bar */
+      text-decoration: none;
+      font-weight: 550;
+      font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+      font-size: 20px;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 700;
+      line-height: 60px;
+    }
+
+
+    .nav a.active {
+      background-color: #fff;
+      color: #37352f;
+    }
+
+    .nav a:hover {
+      background-color: rgba(55, 53, 47, 0.08);
+      color: #37352f;
+      border-radius: 0px;
+    }
+
+
+
+    ::selection {
+      background-color: #f0f0f0;
+      color: #f0f0f0;
+    }
+
+    .employer-card img {
+      width: 300px;
+      height: 150px;
+    }
+
+    .employer-card:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .learn-more {
+      transition: 0.3s;
+    }
+
+    .learn-more:hover {
+      color: white;
+      background-color: rgba(46, 204, 113, 1);
+    }
+
+    .employers {
+      margin-top: 100px;
+      /* Adjust this value to set the desired distance from the navigation bar */
+      font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+      margin-top: 60px;
+    }
+
+    h2 {
+      font-family: "Lato", sans-serif;
+    }
+
+    .employer-card {
+      font-family: "Lato", sans-serif;
+      margin-top: 15px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 992px) {
+      .employer-card {
+        margin-bottom: 30px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav a {
+        font-size: 16px;
+      }
+
+      .employer-card img {
+        width: 400px;
+        height: 80px;
+      }
+
+      h2 {
+        font-size: 10px;
+      }
+
+      .employer-card {
+        padding: 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .nav a.nav-left {
+        margin-right: 0;
+        max-width: 100%;
+      }
+
+      .nav {
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      .nav a {
+        font-size: 14px;
+        padding: 10px;
+      }
+
+      .employer-card img {
+        width: 200px;
+        height: 60px;
+      }
+
+      h2 {
+        font-size: 20px;
+
+      }
+
+      .employer-card:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s;
+      }
+
+      .col-md-4 {
+        display: flex;
+        justify-content: center;
+      }
+
+      .social-icons li a:hover {
+        background-color: transparent;
+        color: #37352f;
+        border-radius: 5px;
+        transition: color 0.3s;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="nav">
+    <a class="nav-left" href="grpprj.py">The Career Club</a>
+    <a href="internships.html">Internships</a>
+    <a href="jobs.html">Jobs</a>
+    <a href="employers.html">Employers</a>
+    <a href="events.py">Events</a>
+    <a href="login3.py">Login</a>
+  </div>
+  </div>
+  <section class="employers">
+    <div class="container">
+      <h2 align="center" style="font-family: 'Arial', sans-serif; font-weight: normal; font-size: 35px;"><br>Featured
+        Employers</h2><br>
+
+      <div class="row">
+        <!-- Employer 1 -->
+        <div class="col-md-4">
+          <div class="employer-card">
+            <img src="jp.png" alt="Employer Logo">
+            <h3 style="font-family: 'Arial', sans-serif; font-weight: bold; font-size: 20px;"><a href="jp.html" style="text-decoration: none; color: black;">JP Morgan</a></h3>
+
+            <p>Global financial services firm providing investment banking, asset management, wealth management.</p>
+            <a href="#bookemp">
+            <button  type="button"  class="btn btn-danger btn-block">Book Appoinment</button> </a>
+
+            
+          </div>
+        </div>
+        <!-- Employer 2 -->
+        <div class="col-md-4">
+          <div class="employer-card">
+            <img src="ms.png" alt="Employer Logo">
+            <h3 style="font-family: 'Arial', sans-serif; font-weight: bold; font-size: 20px;"><a href="ms.html" style="text-decoration: none; color: inherit;">Morgan Stanley</a></h3>
+
+            <p>Global financial services firm offering investment banking, securities, wealth and investment management.
+            </p>
+            <a href="#bookemp">
+            <button  type="button"  class="btn btn-danger btn-block">Book Appoinment</button> </a>
+          </div>
+        </div>
+        <!-- Employer 3 -->
+        <div class="col-md-4">
+          <div class="employer-card">
+            <img src="boa.png" alt="Employer Logo">
+            <h3 style="font-family: 'Arial', sans-serif; font-weight: bold; font-size: 20px;"><a href="boa.html" style="text-decoration: none; color: inherit;">Bank Of America</a></h3>
+
+            <p>Global financial institution offering banking, lending, investment, and wealth management services.</p>
+           <a href="#bookemp">
+            <button  type="button"  class="btn btn-danger btn-block">Book Appoinment</button> </a>
+          </div>
+        </div>
+        <!-- Employer 4 -->
+        <div class="col-md-4">
+          <div class="employer-card">
+            <img src="gs.png" alt="Employer Logo">
+            <h3 style="font-family: 'Arial', sans-serif; font-weight: bold; font-size: 20px;"><a href="gs.html" style="text-decoration: none; color: inherit;">Goldman Sachs</a></h3>
+
+            <p>Global investment banking, securities, and investment management firm serving corporations, governments.
+            </p>
+           <a href="#bookemp">
+            <button  type="button"  class="btn btn-danger btn-block">Book Appoinment</button> </a>
+
+          </div>
+        </div>
+        <!-- Employer 5 -->
+        <div class="col-md-4">
+          <div class="employer-card">
+            <img src="amazon.jpeg" alt="Employer Logo">
+            <h3 style="font-family: 'Arial', sans-serif; font-weight: bold; font-size: 20px;"><a href="amz.html" style="text-decoration: none; color: inherit;">Amazon</a></h3>
+
+            <p>E-commerce and cloud computing company offering a wide range of products and services to customers
+              worldwide.</p>
+
+
+            <a href="#bookemp">
+            <button  type="button"  class="btn btn-danger btn-block">Book Appoinment</button> </a>
+
+
+          </div>
+        </div>
+        <!-- Employer 6 -->
+        <div class="col-md-4">
+          <div class="employer-card">
+            <img src="kpmg.png" alt="Employer Logo">
+            <h3 style="font-family: 'Arial', sans-serif; font-weight: bold; font-size: 20px;"><a href="kpmg.html" style="text-decoration: none; color: inherit;">KPMG</a></h3>
+
+            <p>One of the "Big Four" accounting firms, providing audit, tax, and advisory services globally.</p>
+            <a href="#bookemp">
+            <button  type="button"  class="btn btn-danger btn-block">Book Appoinment</button> </a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="bookemp">
+
+    <div class="container mt-5">
+
+      <div class="row justify-content-center">
+
+        <div class="col-lg-8 col-md-10">
+
+          <div class="card p-3">
+
+            <h1 class="text-center mb-4">Book Appoinment with Employers</h1>
+
+            <form id="booking-form">
+
+              <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" class="form-control" id="date" name="date" required>
+              </div>
+
+              <div class="form-group">
+                <label for="time">Time:</label>
+                <input type="time" class="form-control" id="time" name="time" required>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Available Employers:</label>
+                <select class="form-control" id="subject" name="subject" required>
+                  <option value="">Select an Employer</option>
+                  <option value="Subject 1">Amazon</option>
+                  <option value="Subject 2">JP Morgan</option>
+                  <option value="Subject 3">Google</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="comments">Subject/Comments:</label>
+                <textarea class="form-control" id="comments" name="comments" rows="3"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-danger btn-block">Submit</button>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/templatemo-eduwell-style.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="assets/css/lightbox.css">
+  <section class="contact-us" id="contact-section">
+    <div class="col-lg-12">
+      <ul class="social-icons">
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="#"><i class="fa fa-rss"></i></a></li>
+        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+      </ul>
+      </form>
+
+
+
+
+      <h3 align="center"> <br>The Career Club</h3>
+      <p align="center">The Career Club aims to make the job search process easier and more efficient for both job
+        seekers and employers.</p>
+      <br>
+    </div>
+  </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>

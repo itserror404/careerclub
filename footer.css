@@ -1,0 +1,377 @@
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #72bcd4;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+h1 {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans",
+    "Helvetica Neue", Arial, sans-serif;
+  font-size: 52px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 1.1;
+}
+.joblist {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 40px 20px;
+  quotes: "\201C""\201D""\2018""\2019";
+  font-size: 20px;
+  line-height: 150%;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans",
+    "Helvetica Neue", Arial, sans-serif;
+  font-style: italic;}
+
+
+
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.primary {
+  background-color: #e16259;
+  color: #fff;
+  border: 1px solid rgb(190, 86, 67);
+  border-radius: 3px;
+  align-items: center;
+  height: fit-content;
+  min-width: 180px;
+  font-size: large;
+  font-weight: 500;
+  padding: 12px;
+}
+
+.primary:hover {
+  background-color: #cf534a;
+  color: #fff;}
+
+.block {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #04AA6D;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  float: right;
+
+}
+
+.header {
+  background-color: #F1F1F1;
+  text-align: center;
+  padding: 20px;
+}
+.footer {
+  background-color: #F1F1F1;
+  text-align: center;
+  padding: 10px;
+}
+
+/* navigation bar */
+
+.nav {
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.navr {
+  background-color: #fff;
+  overflow: hidden;
+}
+.nav-left {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans",
+    "Helvetica Neue", Arial, sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 1.1;
+  float: left;
+
+
+}
+
+.nav-right {
+  float: right;
+  font-size: 20px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans",
+    "Helvetica Neue", Arial, sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+/* Style the links inside the navigation bar */
+.nav a {
+  color: #37352f;
+  float: left;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: 550;
+
+}
+
+.navr a {
+  color: #37352f;
+  float: right;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: 550;
+
+
+}
+
+/* Add a color to the active/current link */
+.navr a.active {
+  background-color: #fff;
+  color: #37352f;
+
+
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-left {
+  margin-right: auto;
+}
+
+.navr {
+  display: flex;
+  align-items: center;
+}
+
+/* Change the color of links on hover */
+.nav a:hover {
+  background-size: 1px;
+  background-color: rgba(55, 53, 47, 0.08);
+  color: #37352f;
+
+}
+
+a {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 20px;
+  line-height: 150%;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans",
+    "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  text-decoration: underline;
+  padding:3px;
+}
+
+h3 {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans",
+    "Helvetica Neue", Arial, sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+body{
+    background: #fcfcfc;
+    font-family: sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #4070f4;
+}
+.input-box {
+  position: relative;
+  height: 76px;
+  max-width: 900px;
+  width: 100%;
+  background: #fff;
+  margin: 0 20px;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.input-box i,
+.input-box .button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.input-box i {
+  left: 20px;
+  font-size: 30px;
+  color: #707070;
+}
+.input-box input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  padding: 0 155px 0 65px;
+  background-color: transparent;
+}
+.input-box .button {
+  right: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 6px;
+  background-color: #4070f4;
+  cursor: pointer;
+}
+.input-box .button:active {
+  transform: translateY(-50%) scale(0.98);
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after the columns */
+.row{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column-2 {
+    width:50%;
+}
+.column-3 {
+    width:33.333%;
+}
+.row {
+    width:100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.imageabout {
+  width: 5px;
+  height: 200px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #fcfcfc;
+    font-family: sans-serif;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #cacdd2;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+    border: 1.1px solid white;
+    padding: 5px;
+    border-radius: 50%;
+}
+.socials a i{
+    font-size: 1.1rem;
+    width: 20px;
+    transition: color .4s ease;
+}
+.socials a:hover i{
+    color: aqua;
+}

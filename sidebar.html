@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<!-- Overlay -->
+<div class="sidebar-2" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<!-- Page content -->
+<button class="w3-button w3-xxlarge" onclick="w3_open()">&#9776;</button>
+<div class="w3-container">
+  <h1>Sidebar Overlay</h1>
+  <p>Click on the "hamburger" icon to slide in the side navigation.</p>
+</div>
+
+<!-- JS to open and close sidebar with overlay effect -->
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">&#9776; Open Sidebar</button>
+  <h2>Collapsed Sidebar</h2>
+  <p>Content...</p>
+</div>
+
+<link rel="stylesheet" href="form.css">
+<div class="sidebar">
+      <div class="sidebar-1">
+        <div class="s1-initial">J</div>
+          <a class="s2-link" onclick="w3_close()" class="s1-name" href="inbox.html">Login</a>
+        <div class="s1-icon"><i class="fa fa-angle-down"></i></div>
+      </div>
+      <div class="sidebar-2">
+        <div class="s2-item">
+          <div class="s2-icon">
+            <i class="far fa-star"></i>
+          </div>
+           <a class="s2-link" href="index.html">Home</a>
+          
+        </div>
+        <div class="s2-item">
+          <div class="s2-icon">
+            <i class="fas fa-tasks"></i>
+          </div>
+
+            <div> <a href="internships.html" class="s2-link">Internships</a></div>
+      
+          
+        </div>
+        <div class="s2-item">
+          <div class="s2-icon">
+            <i class="fa fa-cog"></i>
+          </div>
+          
+          <a href="jobs.html" class="s2-link">Jobs</a>
+          
+        </div>
+        <div class="s2-item">
+          <div class="s2-icon">
+            <i class="fas fa-table"></i>
+          </div>
+            <a href="employers.html" class="s2-link">Employers</a>
+        </div>
+
+       <div class="s2-item">
+          <div class="s2-icon">
+            <i class="fas fa-table"></i>
+          </div>
+          
+              <a href="events.html" class="s2-link">Events</a>
+          </div>
+        </div>
+      </div>
+            </div>
+        </div>
+          
+        
+        <div class="instrument-properties">
+
+          <div class="instrument-header" id="type">
+            <div class="instrument-header-icon">
+              <i class="fas fa-bullseye"></i>
+            </div>
+            <div class="instrument-header-text">
+              Type
+            </div>
+          </div>
+          <form>
+            <input type="text"
+              name="type_code"
+              class="form-input"
+              placeholder="PV"
+              onfocus="darkLabel('#type'); this.placeholder=''"
+              onblur="lightLabel('#type'); this.placeholder='PV'">
+          </form>
+          <div class="instrument-header" id="loop">
+            <div class="instrument-header-icon">
+              <i class="fas fa-hashtag"></i>
+            </div>
+            <div class="instrument-header-text">
+              Loop
+            </div>
+          </div>
+          <form>
+            <input type="text"
+              name="type_code"
+              class="form-input"
+              placeholder="1001"
+              onfocus="darkLabel('#loop'); this.placeholder=''"
+              onblur="lightLabel('#loop'); this.placeholder='1001'">
+            </form>
+          <div class="instrument-header" id="vendor">
+            <div class="instrument-header-icon">
+              <i class="fas fa-dollar-sign"></i>
+            </div>
+            <div class="instrument-header-text">
+              Vendor
+            </div>
+          </div>
+          <form>
+            <input type="text"
+              name="type_code"
+              class="form-input"
+              placeholder="Lakeside Process Controls"
+              onfocus="darkLabel('#vendor'); this.placeholder=''"
+              onblur="lightLabel('#vendor'); this.placeholder='Lakeside Process Controls'">
+            </form>
+          <div class="instrument-header" id="manufacturer">
+            <div class="instrument-header-icon">
+              <i class="far fa-building"></i>
+            </div>
+            <div class="instrument-header-text">
+              Manufacturer
+            </div>
+          </div>
+          <form>
+            <input type="text"
+              name="type_code"
+              class="form-input"
+              placeholder="Rosemount"
+              onfocus="darkLabel('#manufacturer'); this.placeholder=''"
+              onblur="lightLabel('#manufacturer'); this.placeholder='Rosemount'">
+            </form>
+          <div class="instrument-header" id="model">
+            <div class="instrument-header-icon">
+              <i class="fas fa-hashtag"></i>
+            </div>
+            <div class="instrument-header-text">
+              Model Number
+            </div>
+          </div>
+          <form>
+            <input type="text"
+              name="type_code"
+              class="form-input"
+              placeholder="3051"
+              onfocus="darkLabel('#model'); this.placeholder=''"
+              onblur="lightLabel('#model'); this.placeholder='3051'">
+            </form>
+          <div class="instrument-header" id="connection">
+            <div class="instrument-header-icon">
+              <i class="fas fa-wrench"></i>
+            </div>
+            <div class="instrument-header-text">
+              Process Connection
+            </div>
+          </div>
+          <form>
+            <input type="text"
+              name="type_code"
+              class="form-input"
+              placeholder="1/2 inch MNPT"
+              onfocus="darkLabel('#connection'); this.placeholder = ''"
+              onblur="lightLabel('#connection'); this.placeholder='1/2 inch MNPT'">
+            </form>
+          <div class="instrument-header" id = "moc">
+            <div class="instrument-header-icon">
+              <i class="fas fa-certificate"></i>
+            </div>
+            <div class="instrument-header-text">
+              Material of Construction
+            </div>
+          </div>
+          <form>
+            <input type="text"
+              name="type_code"
+              class="form-input"
+              placeholder="316/L SS"
+              onfocus="darkLabel('#moc'); this.placeholder=''"
+              onblur="lightLabel('#moc'); this.placeholder='316/L SS'">
+            </form>
+        </div>
+      </div>
+    </div>
+</html>
